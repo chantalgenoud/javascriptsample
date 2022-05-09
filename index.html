@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>  <script>
+
+//Exercise Variable
+
+    var n = 0;
+    var y = 'Zürich';
+    var x = 'Digital Analyst';
+    var z = 'Schnuggi';
+
+    var future = 'You will be a ' + x + ' in ' + y + ' , and married to ' + z + ' ' + 'with ' + n + ' kids.';
+
+    console.log(future);
+    console.log ( 'das sollte doch gehen.' );
+
+
+    /*The Temperature Converter
+It's hot out! Let's make a converter based on the steps here.*/
+
+function celsiusToFahrenheit (celsius) {
+    var celsiusInF = (celsius *9/5 + 32);
+    console.log(celsius + 'C is '+ celsiusInF + 'F');
+}
+
+celsiusToFahrenheit(40);
+
+
+// The Lifetime Supply Calculator
+
+function calculateSupply (age, amountPerDay) {
+    const maxAge = 80
+    totalSupply = (maxAge - age) * 365 * amountPerDay;
+    console.log ('You will need ' + totalSupply + ' to last you until the ripe old age of 80');
+}
+
+calculateSupply (36, 2);
+
+// Kontrolle der Zahl
+console.log ((80-36) *365 * 2);
+
+// The Calculator
+function squareNumber (number) {
+    var squaredNumber = number * number;
+    console.log('The result of squaring the number ' + number + ' is ' +squaredNumber);
+    return squaredNumber;
+}
+
+squareNumber(3);
+
+// Exercises: Strings
+function drEvil (amountDollar) {
+
+ if (amountDollar == 1000000) {
+        return amountDollar + " pinky";
+    }
+
+    else {
+        return amountDollar;
+    }
+}
+
+console.log (drEvil(5000));
+console.log (drEvil (1000000));
+
+// Mix Up To do STRINGS and NOTBAD
+
+
+
+
+    </script>
+  </div>    
+    
+</body>
+</html>
